@@ -1,0 +1,9 @@
+﻿FROM ubuntu:eoan
+
+RUN apt update \
+&& apt -y upgrade \
+&& apt-get -y install tesseract-ocr tesseract-ocr-eng tesseract-ocr-jpn tesseract-ocr-jpn-vert tesseract-ocr-osd \
+&& apt-get -y install nodejs \
+&& apt -y autoremove 
+
+
